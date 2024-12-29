@@ -80,7 +80,7 @@
             var donationAmount = document.getElementById('donation-amount').value;
 
             var options = {
-                "key": "rzp_test_wnbQLa3jb7OO1y", // Replace with your Razorpay key
+                "key": "your razor pay api", // Replace with your Razorpay key
                 "amount": donationAmount * 100, // Convert donation amount to paise
                 "currency": "INR",
                 "name": "NGO Name",
