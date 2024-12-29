@@ -1,0 +1,199 @@
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    display: flex; /* Flexbox layout for the header */
+    justify-content: space-between; /* Space out logo and nav */
+    align-items: center; /* Vertically center the content */
+    background-color: #0056b3; /* Background color for header */
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo {
+    width: 50px; /* Logo size */
+    height: 50px; /* Logo size */
+    border-radius: 50%; /* Optional: circular logo */
+  }
+  
+  header .logo-name {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: italic;
+  }
+  
+  /* Navbar Styling */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; 
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  nav ul li a:hover {
+    background-color: #333; /* Dark background on hover */
+    border-radius: 5px; /* Round the corners of the hover effect */
+  }
+  
+  /* Main Content Area */
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #donate {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  #donate h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #donate form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #donate label {
+    margin: 10px 0 5px;
+  }
+  
+  #donate input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #pay-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #pay-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3e50;
+    color: white;
+  }
+  
+  #receipt {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #d4edda;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+  }
+  
+  /* Mobile responsive navigation */
+  @media (max-width: 768px) {
+    header {
+        text-align: center;
+        flex-direction: column;
+    }
+  
+    header .logo-container {
+        margin-bottom: 10px; /* Space between logo and navbar */
+    }
+  
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .social-media {
+    margin: 20px 0;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: #e74c3c;
+  }
